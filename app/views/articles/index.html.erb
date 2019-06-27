@@ -7,6 +7,9 @@
     </li>
   <% end %>
 </ul>
+
+<hr>
 <% if logged_in? %>
 <%= link_to "Create a New Article", new_article_path, class: "new_article" %>
 <% end %>
+<p> <%= link_to 'Create new Account', new_author_session_path %> </p>
